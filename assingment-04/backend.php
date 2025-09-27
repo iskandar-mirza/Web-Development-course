@@ -1,14 +1,15 @@
 <?php
-var_dump($_POST);
+
+
+$registeredUsers = [];
 
 if ($_POST) {
-        $msg = registerUser($_POST['name'], $_POST['email'], $_POST['password']);
+    $msg = registerUser($_POST['name'], $_POST['email'], $_POST['password']);
     echo "<p>$msg</p>";
     echo "<br>";
 }
 
 
-$registeredUsers = [];
 
 
 function registerUser($name, $email, $password) {
@@ -43,7 +44,7 @@ function loginUser($email, $password) {
 
 function totalUsers() {
     global $registeredUsers;
-    return count($registeredUsers);
+    return sizeof($registeredUsers);
 }
 
 
