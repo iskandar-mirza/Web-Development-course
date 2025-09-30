@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_GET['logout'])) {
-    session_destroy();
+    $_SESSION['logged_in'] = false;
     header("Location: login.php");
     exit;
 }
