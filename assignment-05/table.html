@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .table-cell {
+        border: 1px solid #d1d5db;
+        padding: 0.5rem 1rem;
+        text-align: left;
+      }
+      .table-row:nth-child(odd) {
+        background-color: white;
+      }
+      .table-row:nth-child(even) {
+        background-color: #f7fafc;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 p-10">
+    <table class="min-w-[400px] border border-gray-300 mx-auto mt-8 text-left text-sm">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="table-cell">#</th>
+          <th class="table-cell">Task</th>
+          <th class="table-cell">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-row">
+          <td class="table-cell">1</td>
+          <td class="table-cell">Design UI</td>
+          <td class="table-cell">Pending</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-cell">2</td>
+          <td class="table-cell">Setup DB</td>
+          <td class="table-cell">Pending</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-cell">3</td>
+          <td class="table-cell">Write Docs</td>
+          <td class="table-cell">Pending</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-cell">4</td>
+          <td class="table-cell">Learn PHP</td>
+          <td class="table-cell">Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
